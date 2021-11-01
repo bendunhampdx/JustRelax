@@ -1,0 +1,111 @@
+Intro Script:
+
+Spames: Hello students! Welcome to  ~Spepicodus~ programming bootcamp!
+Spames: My name is ~Spames~ and I will be your instructor for this course.
+Spames: This bootcamp is designed to challenge those who have little to no experience with programming, so remember that it's alright to feel lost at times.
+Spames: It can be hard to stay focused so I reccomend listening to background music as you code. This is my favorite coding music:
+
+-press enter to start music [you can't do anything until you do]
+-- insert ASCII lofi girl here
+
+
+Spames: Part of the requirement to complete the course is to work with a pair at all times. Please introduce yourselves in the chat.
+- Please tell us your name:
+- Pronouns:
+- Where are you from?
+- What did you do before Spepicodus?
+- What are some hobbies you enjoy?
+
+You: Something with the answers you gave
+
+<All NPCs introduce themselves>
+NotDutyLew: Hi! I'm not duty Lew! I live in PDX and my pronouns are she/her. I love fishing (for compliments)! Before specicodus I was an explosives tester in death valley CA. After losing a limb or two.. I decided my talents would be better spent writing code. 
+
+Spames: It's very important to pay attention to your mental health while coding. Taking care of yourself is critical to being a good developer and a good team member. Make sure to check in with yourself regularly.
+Type: "How am I feeling" in the console to check your wellness levels.
+Please type "How am I feeling" now:
+
+
+##Game script:
+
+Spames: Alright, it's time to find a partner. Before you begin working on your first project, complete an ice-breaker activity to get to know each other.
+
+<All NPCs have their own ice breaker--or not>
+
+
+NotDutyLew (she/her): Hey <name>! Do you want to pair?
+[ NotDutyLew has requested to pair with you. Press enter to accept. ]
+[ You're now paired with Duty Lew. ]
+[ As your join the chat with NDL, something vaguely creepy happens]
+
+NotDutyLew: How are you today?
+<good> <bad> <ugle>
+
+NotDutyLew: Looks like were supposed to do word association for the icebreaker today.
+NotDutyLew: ummmm... so the first word is "coding". What's the first word that pops into your head?
+
+you: <answer>
+
+NotDutyLew: That's kinda weird dude... 
+
+[ Give NotDutyLew a word ]
+
+You: Your word is <answer>
+
+...
+...
+[ Not Duty Lew is typing ]
+
+NotDutyLew: Silence. 
+
+...
+...
+[ Not Duty Lew is typing ] 
+
+NotDutyLew: Does that make any sense? I was distracted by the music Spames is having us listen to LOL
+
+NotDutyLew: Looks like our project today is PIG LATIN Translator. I can host our liveshare, if you want.
+
+[ Duty Lew has invited you to join her liveshare ]
+<join> <wait>
+
+Join: Go on to the next bit
+[ Duty Lew: -10 WL ]
+
+Wait: 
+> DutyLew: Did you fall asleep? What are you waiting for?
+[ Duty Lew: -15 WL ]
+
+[ You Have Joined Duty Lew's Live Share ]
+
+DutyLew: I'll read the prompt: "Pig Latin is a language game that involves adding imaginary endings to real English words. In this prompt, you'll create an application that turns words into Pig Latin."
+
+But wait, what is "Away" in Pig Latin?
+
+a <yawaya> b <awayway> c <waywayway>
+
+DutyLew: ""
+
+<until DutyLew hits 60 WL, her answers are fairly mundane, show off her personality, etc.>
+
+DutyLew: 
+DutyLew: What's your favorite way to die?
+
+// Make buckets of sanity questions:
+100-80
+79-59
+58-38
+37-27
+26-06
+0666
+// In the buckets: Make sure there are hints to the win condition
+// In the normal dialogue, do the same
+
+
+If they die, they disappear/or they start repeating themselves/or their words get completely jumbled/etc. & Spames pops up to "repair" you
+
+If you get too low, we already decided: see Figma
+
+🍕
+
+🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕

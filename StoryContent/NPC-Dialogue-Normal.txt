@@ -1,0 +1,5 @@
+This is the NORMAL Bucket:
+Wellness 70 to 100
+
+*Reminder: 
+Make sure there are hints to the win condition in many dialogue scraps
