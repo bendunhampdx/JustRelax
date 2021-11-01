@@ -88,9 +88,23 @@ DutyLew: ""
 
 <until DutyLew hits 60 WL, her answers are fairly mundane, show off her personality, etc.>
 
+DutyLew: 
+DutyLew: What's your favorite way to die?
+
+// Make buckets of sanity questions:
+100-80
+79-59
+58-38
+37-27
+26-06
+0666
+// In the buckets: Make sure there are hints to the win condition
+// In the normal dialogue, do the same
 
 
+If they die, they disappear/or they start repeating themselves/or their words get completely jumbled/etc. & Spames pops up to "repair" you
 
+If you get too low, we already decided: see Figma
 
 🍕
 
