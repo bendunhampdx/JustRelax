@@ -1,0 +1,60 @@
+﻿body {
+  background-color: black;
+  color: greenyellow;
+}
+
+#game {
+  margin: auto;
+  margin-top: 20px;
+  height: 500px;
+  width: 600px;
+  border: 6px solid greenyellow;
+  position: relative;
+}
+
+#screen{
+  overflow-y: scroll;
+  white-space: initial;
+  margin:auto;
+  margin-top: 20px;
+  height: 300px;
+  width: 500px;
+  border: 1px dashed greenyellow;
+  padding: 10px;
+  position: relative;
+}
+
+#screen::-webkit-scrollbar {
+  width: 12px;
+}
+
+#screen::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+  background-color: black;
+}
+
+#disclaimer, #introScene {
+  display: none;
+}
+#titleScreen {
+  display: block;
+}
+
+.button{
+  text-align: center;
+  font-size: medium;
+}
+
+.button:hover {
+  cursor: crosshair;
+  color: white;
+}
+
+#lofiGirl{
+  opacity: 50%;
+  display: none;
+  position: absolute;
+  margin-left: 75px;
+  height: 100%;
+}

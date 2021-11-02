@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Just Relax</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link rel="stylesheet" href="~/css/titleScreen.css" />
+    <link rel="stylesheet" href="~/css/buttons.css" />
+    <link rel="stylesheet" href="~/css/intro.css" />
+    <link rel="stylesheet" href="~/css/credits.css" />
+</head>
+<body>
+  <main id="game">
+
+    <div id="introSceneContinue">[ Continue ]</div>
+
+    <div id="screen">
+
+      <div id="titleScreen">
+        <h1 id="title">JUST RELAX</h1>
+        <h4 class="blink button" id="clickHereToBegin">[ Click Here To Begin ]</h4>
+      </div>
+
+      <div id="disclaimer">
+        <p>This game is purely fictional. Any resemblance to people or entities dead or alive is 100% coincidental. Seriously. This isn't real at all.</p>
+        <h4 class="blink button" id="continueToIntro">[ Continue ]</h4>
+      </div>
+
+      <h3 id="pressEnter1">[ click the continue button to view the next line ]</h3>
+
+      <div id="introScene">
+        <p id="line1"><strong>Arik: </strong> Hello students! Welcome to Codis Somnum programming bootcamp!</p>
+        <p id="introLine2"><strong>Arik: </strong> My name is Arik and I will be your instructor for this course.</p>
+        <p id="introLine3"><strong>Arik: </strong> This bootcamp is designed to challenge you, to change you, to metamorphosize you into...</p>
+        <p id="introLine4"><strong>Arik: </strong> something better.</p>
+        <p id="introLine5"><strong>Arik: </strong> This program is designed for those who have little to no experience with programming, so remember that it's normal to feel lost.</p>
+        <p id="introLine6"><strong>Arik: </strong> It can be hard to stay focused so I recommend listening to background music as you code. This is my favorite coding music:</p>
+        <h3 id="startMusic">[ click here to start the music ]</h3>
+      </div>
+
+      <img id="lofiGirl" src="~/assets/lofiGirl.png" alt="lofi beats girl">
+
+      <div id="credits">
+        <h1 id="creditsTitle">Just Relax</h1>
+        <h2 id="credits1">Created by:</h2>
+        <h3 id="credits2">Ben Dunham</h3>
+        <h3 id="credits3">Kevin Funez</h3>
+        <h3 id="credits4">Chynna Lew</h3>
+        <h3 id="credits5">Diego Serafico</h3>
+        <h3 id="credits6">Melissa Schatz-Miller</h3>
+        <h4 id="music1">Music by: <br>SmiresOrchestra</h4>
+        <p id="epicodus">copyright 2021</p>
+      </div>
+
+      <div id="player">
+        <p class="playerLine1"><strong>Arik: </strong> Part of the requirement to complete the course is to work with a pair at all times. You will pair up shortly. First, please introduce yourselves in the chat.</p>
+      </div>
+    </div>
+   
+  </main>
+</body>
+</html>

@@ -14,15 +14,22 @@ namespace JustRelax
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
+
+          .AddEnvironmentVariables();
+      Configuration = builder.Build();
+    }
+
           .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
 
     public IConfigurationRoot Configuration { get; set; }
 
+
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
+
 
       services.AddEntityFrameworkMySql()
         .AddDbContext<JustRelaxContext>(options => options
@@ -42,7 +49,7 @@ namespace JustRelax
       });
 
       app.UseStaticFiles();
-      
+
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("Hello World!");
