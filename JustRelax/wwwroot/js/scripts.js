@@ -59,5 +59,4 @@ $(document).ready(function () {
     $('#epicodus').delay(1000).fadeOut();
     $('#playerLine1').delay(20500).fadeIn();
   });
- 
 });

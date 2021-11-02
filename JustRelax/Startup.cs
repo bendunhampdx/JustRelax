@@ -15,10 +15,8 @@ namespace JustRelax
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
 
-          .AddEnvironmentVariables();
-      Configuration = builder.Build();
-    }
-
+          .AddEnvironmentVariables()
+    
           .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
@@ -35,7 +33,6 @@ namespace JustRelax
         .AddDbContext<JustRelaxContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
-
 
     public void Configure(IApplicationBuilder app)
     {
@@ -57,3 +54,5 @@ namespace JustRelax
     }
   }
 }
+
+
