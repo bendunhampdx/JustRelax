@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using JustRelax.Models;
-using Microsoft.AspNetCore.Identity;
 
 namespace JustRelax
 {
@@ -34,8 +33,6 @@ namespace JustRelax
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
-
-      app.UseAuthentication(); 
 
       app.UseRouting();
 
