@@ -6,6 +6,7 @@ namespace JustRelax.Models
   {
     public DbSet<Player> Players { get; set; }
     public DbSet<Item> Items { get; set; }
+    public DbSet<NPC> NPCs { get; set; }
 
     public JustRelaxContext(DbContextOptions options) : base(options) { }
 
