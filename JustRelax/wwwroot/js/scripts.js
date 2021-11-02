@@ -9,20 +9,7 @@ $(document).ready(function () {
   $('#clickHereToBegin').click(function () {
     $('#titleScreen').hide();
     $('#disclaimer').show();
-    $('#creditsTitle').delay(5000).fadeIn(500);
-    $('#creditsTitle').delay(2000).fadeOut(500);
-    $('#credits1').delay(8000).fadeIn();
-    $('#credits1').delay(500).fadeOut();
-    $('#credits2').delay(9500).fadeIn();
-    $('#credits2').delay(500).fadeOut();
-    $('#credits3').delay(11000).fadeIn();
-    $('#credits3').delay(500).fadeOut();
-    // // $('#credits4').delay(7000).fadeIn(500);
-    // // $('#credits4').delay(7500).fadeOut(500);
-    // // $('#credits5').delay(8000).fadeIn(500);
-    // // $('#credits5').delay(8500).fadeOut(500);
-    // // $('#credits6').delay(9000).fadeIn(500);
-    // // $('#credits6').delay(9500).fadeOut(500)
+    
   });
   $('#continueToIntro').click(function () {
     $('#disclaimer').fadeOut(1500);
@@ -52,8 +39,25 @@ $(document).ready(function () {
     backgroundLofi.play();
     $('#lofiGirl').fadeIn(2000);
     $('#lofiGirl').delay(2000).fadeOut(2000);
-    $('#credits').show();
-    
+    $('#creditsTitle').delay(5000).fadeIn(500);
+    $('#creditsTitle').delay(2000).fadeOut(500);
+    $('#credits1').delay(8000).fadeIn();
+    $('#credits1').delay(500).fadeOut();
+    $('#credits2').delay(9500).fadeIn();
+    $('#credits2').delay(500).fadeOut();
+    $('#credits3').delay(11000).fadeIn();
+    $('#credits3').delay(500).fadeOut();
+    $('#credits4').delay(12500).fadeIn();
+    $('#credits4').delay(500).fadeOut();
+    $('#credits5').delay(14000).fadeIn();
+    $('#credits5').delay(500).fadeOut();
+    $('#credits6').delay(15500).fadeIn();
+    $('#credits6').delay(500).fadeOut()
+    $('#music1').delay(18000).fadeIn();
+    $('#music1').delay(800).fadeOut();
+    $('#epicodus').delay(20000).fadeIn();
+    $('#epicodus').delay(1000).fadeOut();
+    $('#playerLine1').delay(20500).fadeIn();
   });
  
 });
