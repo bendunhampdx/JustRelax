@@ -1,4 +1,4 @@
-#introLine2 {
+#introLine2, #introLine3, #introLine3, #introLine4, #introLine5, #introLine6, #pressEnter1, #startMusic{
   display: none;
 }
 
@@ -6,5 +6,14 @@
   color: white;
   text-align: center;
   font-size: small;
+  position: absolute;
+  bottom:10px;
 }
 
+#startMusic{
+  text-align: center;
+}
+#startMusic:hover{
+  color: white;
+  cursor: crosshair;
+}

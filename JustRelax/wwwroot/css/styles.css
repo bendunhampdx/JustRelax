@@ -50,3 +50,11 @@
   cursor: crosshair;
   color: white;
 }
+
+#lofiGirl{
+  opacity: 50%;
+  display: none;
+  position: absolute;
+  margin-left: 75px;
+  height: 100%;
+}
