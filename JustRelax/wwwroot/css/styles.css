@@ -59,6 +59,25 @@
   height: 100%;
 }
 
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.continue {
+  text-align: center;
+  font-size: medium;
+}
+
+.continue:hover {
+  color:white;
+  cursor: crosshair;
+ 
 input[type=text] {
   color: greenyellow;
   background-color: black;

@@ -1,8 +1,12 @@
-#introSceneContinue {
+#introSceneContinue #createSceneContinue{
   display: none;
 }
 
-#introSceneContinue {
+.continueButton{
+  display: none;
+}
+
+.continueButton {
   align-items: center;
   justify-content: center;
   border: 2px solid greenyellow;
@@ -23,11 +27,19 @@
   right: 0px;
 }
 
-#introSceneContinue:hover {
+.continueButton:hover {
   color: white;
   border-color: white;
 }
 
+#characterContinue{
+  text-align: center;
+}
+
+#characterContinue:hover{
+  color: white;
+  cursor: crosshair;
+ 
 #gameTextBoxSubmit {
   align-items: center;
   justify-content: center;
@@ -47,4 +59,4 @@
   text-align: center;
   bottom: 0px;
   left: 0px;
-}
+

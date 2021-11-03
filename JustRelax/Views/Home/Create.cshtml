@@ -1,0 +1,35 @@
+@{
+  Layout = "_Layout";
+}
+@model JustRelax.Models.Player
+
+<h3 id='createCharacterContinue' class="continue">[ Click here to create your character ]</h3>
+<form id="characterCreation">
+  <p id="characterLine1">Please type your name:
+    <br>
+    @Html.TextBoxFor(model => model.Name, new{@class="form-control textBoxInput", @required="required"})
+  </p>
+  <h3 id="pressEnter3">[ click the continue button to view the next line ]</h3>
+  <p id="characterLine2">Please enter your pronouns:
+    <br>
+    @Html.TextBox("pronouns", "none", new {@class="form-control textBoxInput", @required="required"})
+  </p>
+  
+  <p id="characterLine3">Where are you from:
+    <br>
+    @Html.TextBox("location", "nowhere", new{@class="form-control textBoxInput", @required="required"})
+  </p>
+  
+  <p id="characterLine4">What did you do before Codis Sonmum:
+    <br>
+    @Html.TextBox("before", "nothing", new{@class="form-control textBoxInput", @required="required"})
+  </p>
+  
+  <p id="characterLine5">What are your hobbies?:
+    <br>
+     @Html.TextBox("before", "no hobbies", new{@class="form-control textBoxInput", @required="required"})
+  </p>
+ 
+  <br>
+  <h3 type="submit" id="characterContinue" class="continue"> [ Continue ]</h3>
+</form>

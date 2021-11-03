@@ -5,6 +5,9 @@ $(document).ready(function () {
   var backgroundLofi = new Audio('../assets/lofi.mp3');
   backgroundLofi.loop = true;
 
+  var backgroundTyping = new Audio('../assets/typing.wav');
+  backgroundTyping.loop = true;
+
 
   $('#clickHereToBegin').click(function () {
     $('#titleScreen').hide();
@@ -58,5 +61,28 @@ $(document).ready(function () {
     $('#epicodus').delay(20000).fadeIn();
     $('#epicodus').delay(1000).fadeOut();
     $('#playerLine1').delay(22000).fadeIn();
+    $('#playerLine1Continue').delay(24000).fadeIn();
   });
+
+  $('#createCharacterContinue').click(function () {
+    $('#createCharacterContinue').hide();
+    $('#characterLine1').fadeIn();
+    $('#pressEnter3').delay(1500).fadeIn(3000);
+    $('#createSceneContinue').delay(2000).fadeIn(3000);
+    backgroundTyping.play();
+  })
+  var createDivsCount = 1;
+  $('#createSceneContinue').click(function () {
+    var totalCreateDivsCount = 6;
+    if (createDivsCount < totalCreateDivsCount) {
+      createDivsCount += 1;
+      $('#pressEnter3').hide();
+      $('#characterLine' + createDivsCount).fadeIn();
+      $('#screen').scrollTop($('#screen')[0].scrollHeight);
+      if (createDivsCount === totalCreateDivsCount) {
+        $('#characterContinue').fadeIn();
+        $('#screen').scrollTop($('#screen')[0].scrollHeight);
+      }
+    }
+  })
 });
