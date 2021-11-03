@@ -1,4 +1,4 @@
-#introLine2, #introLine3, #introLine3, #introLine4, #introLine5, #introLine6, #pressEnter1, #startMusic{
+#introLine2, #introLine3, #introLine3, #introLine4, #introLine5, #introLine6, #pressEnter1, #startMusic, #playerLine1Continue{
   display: none;
 }
 
@@ -17,3 +17,9 @@
   color: white;
   cursor: crosshair;
 }
+
+#playerLine1Continue{
+  text-align: center;
+  font-size: medium;
+}
+

@@ -58,3 +58,13 @@
   margin-left: 75px;
   height: 100%;
 }
+
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}

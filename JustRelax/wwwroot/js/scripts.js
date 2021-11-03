@@ -5,6 +5,8 @@ $(document).ready(function () {
   var backgroundLofi = new Audio('../assets/lofi.mp3');
   backgroundLofi.loop = true;
 
+  
+
 
   $('#clickHereToBegin').click(function () {
     $('#titleScreen').hide();
@@ -58,5 +60,8 @@ $(document).ready(function () {
     $('#epicodus').delay(20000).fadeIn();
     $('#epicodus').delay(1000).fadeOut();
     $('#playerLine1').delay(22000).fadeIn();
+    $('#playerLine1Continue').delay(24000).fadeIn();
   });
+
+
 });

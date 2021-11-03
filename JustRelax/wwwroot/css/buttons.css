@@ -27,3 +27,12 @@
   color: white;
   border-color: white;
 }
+
+#characterContinue{
+  text-align: center;
+}
+
+#characterContinue:hover{
+  color: white;
+  cursor: crosshair;
+}
