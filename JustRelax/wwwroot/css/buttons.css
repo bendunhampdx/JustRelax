@@ -27,3 +27,24 @@
   color: white;
   border-color: white;
 }
+
+#gameTextBoxSubmit {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid greenyellow;
+  outline: none;
+  background-color: black;
+  color: greenyellow
+  ;
+  cursor: crosshair;
+  padding: 10px;
+  margin: 15px;
+  position: absolute;
+  font-size: small;
+  color: greenyellow;
+  width: 120px;
+  clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, 10% 110%, -10% 40%);
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+}
