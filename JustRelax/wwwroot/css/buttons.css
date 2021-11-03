@@ -39,7 +39,8 @@
 #characterContinue:hover{
   color: white;
   cursor: crosshair;
- 
+}
+
 #gameTextBoxSubmit {
   align-items: center;
   justify-content: center;
@@ -59,4 +60,9 @@
   text-align: center;
   bottom: 0px;
   left: 0px;
+}
 
+#gameTextBoxSubmit:hover {
+  border-color: white;
+  color: white;
+}
