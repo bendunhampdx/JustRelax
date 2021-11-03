@@ -20,8 +20,17 @@
 
     <div id="introSceneContinue">[ Continue ]</div>
     
+
     <div id="screen">
       @RenderBody()
+    </div>
+
+    <div id="gameTextBox">
+      <form id="gameTextBoxForm">
+        <input type="text" form="gameTextBoxForm" placeholder="Type your command here:" maxlength="50" id="gameTextBoxInput">
+
+        <input type="submit" value="Submit" id="gameTextBoxSubmit">
+      </form>
     </div>
    
   </main>
