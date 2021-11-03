@@ -1,9 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
+using JustRelax.Models;
 
 namespace JustRelax.Controllers
 {
   public class HomeController : Controller
   {
+    private readonly JustRelaxContext _db;
+
+    public HomeController(JustRelaxContext db)
+    {
+      _db = db;
+    }
+
     [HttpGet("/")]
     public ActionResult Index() 
     { 
@@ -14,6 +22,18 @@ namespace JustRelax.Controllers
     {
       return View();
     }
-  }
 
+    [HttpPost]
+    public ActionResult Create(Player player)
+    {
+      _db.Players.Add(player);
+      _db.SaveChanges();
+      return RedirectToAction("Game");
+    }
+
+    public ActionResult Game()
+    {
+      return View();
+    }
+  }
 }

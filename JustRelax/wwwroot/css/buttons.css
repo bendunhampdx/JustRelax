@@ -34,6 +34,11 @@
 
 #characterContinue{
   text-align: center;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  border: none;
+  background-color: black;
 }
 
 #characterContinue:hover{
@@ -41,14 +46,14 @@
   cursor: crosshair;
 }
 
+
 #gameTextBoxSubmit {
   align-items: center;
   justify-content: center;
   border: 2px solid greenyellow;
   outline: none;
   background-color: black;
-  color: greenyellow
-  ;
+  color: greenyellow;
   cursor: crosshair;
   padding: 10px;
   margin: 15px;
@@ -62,7 +67,9 @@
   left: 0px;
 }
 
+
 #gameTextBoxSubmit:hover {
   border-color: white;
   color: white;
 }
+
