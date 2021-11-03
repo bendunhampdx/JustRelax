@@ -1,0 +1,15 @@
+#characterLine1, #pressEnter3, #characterLine2, #characterLine3, #characterLine4, #characterLine5, #characterContinue {
+  display: none;
+}
+
+#createCharacterContinue {
+  font-size: large;
+}
+
+#pressEnter3{
+  color: white;
+  text-align: center;
+  font-size: small;
+  position: absolute;
+  bottom:10px;
+}

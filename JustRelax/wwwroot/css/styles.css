@@ -68,3 +68,13 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+
+.continue {
+  text-align: center;
+  font-size: medium;
+}
+
+.continue:hover {
+  color:white;
+  cursor: crosshair;
+}

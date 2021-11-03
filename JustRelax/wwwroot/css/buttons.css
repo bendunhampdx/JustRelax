@@ -1,8 +1,12 @@
-#introSceneContinue {
+#introSceneContinue #createSceneContinue{
   display: none;
 }
 
-#introSceneContinue {
+.continueButton{
+  display: none;
+}
+
+.continueButton {
   align-items: center;
   justify-content: center;
   border: 2px solid greenyellow;
@@ -23,7 +27,7 @@
   right: 0px;
 }
 
-#introSceneContinue:hover {
+.continueButton:hover {
   color: white;
   border-color: white;
 }
