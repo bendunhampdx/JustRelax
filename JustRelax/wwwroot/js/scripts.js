@@ -57,6 +57,6 @@ $(document).ready(function () {
     $('#music1').delay(800).fadeOut();
     $('#epicodus').delay(20000).fadeIn();
     $('#epicodus').delay(1000).fadeOut();
-    $('#playerLine1').delay(20500).fadeIn();
+    $('#playerLine1').delay(22000).fadeIn();
   });
 });
