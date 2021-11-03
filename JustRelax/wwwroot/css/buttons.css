@@ -57,14 +57,14 @@
   cursor: crosshair;
   padding: 10px;
   margin: 15px;
-  position: absolute;
+  /* position: absolute; */
   font-size: small;
   color: greenyellow;
   width: 120px;
   clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, 10% 110%, -10% 40%);
   text-align: center;
   bottom: 0px;
-  left: 0px;
+  float: left;
 }
 
 

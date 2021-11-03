@@ -80,25 +80,31 @@ a:hover {
   cursor: crosshair;
 }
 
+#gameTextBox {
+  position:absolute;
+  bottom:0px;
+  left:10px;
+  width:75%;
+  display:none;
+}
 
 input[type=text]#gameTextBoxInput {
   color: greenyellow;
   background-color: black;
-  position: absolute;
-  bottom: 70px;
-  left: 10px;
+  /* position: absolute; */
+  float:left;
   border: 1px solid greenyellow;
-  width: 35%;
+  width: 40%;
+  margin-top:20px;
 }
 
 input[type=text]#gameTextBoxInput:focus {
   color: greenyellow;
   background-color: black;
-  position: absolute;
-  bottom: 70px;
-  left: 10px;
+  /* position: absolute; */
   border: 1px solid greenyellow;
   width: 40%;
+  outline: greenyellow;
 }
 
 input[type=text] {
@@ -111,4 +117,13 @@ input[type=text]:focus {
   color: greenyellow;
   background-color: black;
   border: 1px solid greenyellow;
+}
+
+#wellnessBox {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+  z-index: 100;
+  background-color: black;
 }

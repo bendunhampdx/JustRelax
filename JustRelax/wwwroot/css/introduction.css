@@ -1,0 +1,22 @@
+#introductionLine1, #introductionLine2, #introductionLine3, #introductionLine4,#introductionLine5, #introductionLine6, #introductionLine7, #introductionLine8, #introductionLine8a, #introductionLine8b, #introductionLine8c, #introductionLine8d, #introductionLine9, #introductionLine10, #introductionLine11, #introductionLine12, #introductionLine13, #introductionLine14, #introductionLine15, #introductionLine16, #introductionLine17, #introductionLine18, #introductionLine19, #introductionLine20, #introductionLine20, #introductionLine21, #pressEnter4 {
+  display: none;
+}
+
+#continueToIntroduction {
+  margin-top: 70px;
+  font-size: medium;
+  text-align: center;
+}
+
+#continueToIntroduction:hover {
+  color:white;
+}
+
+#pressEnter4 {
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: small;
+  position: absolute;
+  bottom:10px;
+}

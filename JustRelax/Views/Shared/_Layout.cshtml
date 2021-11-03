@@ -1,9 +1,11 @@
+@using JustRelax.Models
+@model JustRelax.Models.Player
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Just Relax</title>
+    <title>@ViewData["Title"] Just Relax</title>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/scripts.js" asp-append-version="true"></script>
@@ -15,32 +17,43 @@
     <link rel="stylesheet" href="~/css/credits.css" />
     <link rel="stylesheet" href="~/css/player.css" />
     <link rel="stylesheet" href="~/css/create.css" />
+    <link rel="stylesheet" href="~/css/introduction.css" />
+    <link rel="stylesheet" href="~/css/jazzercise.css" />
+    <link rel="stylesheet" href="~/css/bob.css" />
+    <link rel="stylesheet" href="~/css/corky.css" />
+    <link rel="stylesheet" href="~/css/abigail.css" />
+    <link rel="stylesheet" href="~/css/pollo.css" />
 </head>
 <body>
   <main id="game">
 
     <div id="introSceneContinue" class="continueButton">[ Continue ]</div>
     <div id="createSceneContinue" class="continueButton">[ Continue ]</div>
+    <div id="introductionSceneContinue" class="continueButton">[ Continue ]</div>
+    <div id="jazzerciseSceneContinue" class="continueButton">[ Continue ]</div>
     
-    <div id="health">
-      <p id=wellnessText>Wellness Level</p>
-      <div id="wellnessBar"></div>
-    </div>
 
     <div id="screen">
       @RenderBody()
     </div>
-
-    <div id="otherText"></div>
-
+ 
     <div id="gameTextBox">
       <form id="gameTextBoxForm">
-        <input type="text" form="gameTextBoxForm" placeholder="Type your command here:" maxlength="50" id="gameTextBoxInput">
+        <input type="text" form="gameTextBoxForm" placeholder="Type your command" maxlength="50" id="gameTextBoxInput">
 
         <input type="submit" value="Submit" id="gameTextBoxSubmit">
       </form>
     </div>
-
+    @if(@Model != null)
+    {
+      <div id="wellnessBox">
+        <p id="wellnessText">Wellness Level</p>
+        <div id="wellnessBar">
+          <progress id="wellnessProgress" value="@Model.Wellness" max="100"></progress>
+        </div>
+      </div>
+    }
+    <div id="otherText"></div>
   </main>
 </body>
 </html>
