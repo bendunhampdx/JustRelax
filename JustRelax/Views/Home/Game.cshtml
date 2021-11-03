@@ -5,4 +5,733 @@
 @using JustRelax.Models
 @model JustRelax.Models.Player
 
-<h3>@Html.DisplayFor(model => model.Name)</h3>
+<div id="introductionScene">
+  <h3 id="continueToIntroduction">[ Welcome @Model.Name! Click Here to Begin ]
+  </h3>
+  <p id="introductionLine1"><strong>Arik: </strong> It's very important to pay attention to your mental health, especially while coding. </p>
+  <h3 id="pressEnter4">[ click the continue button to view the next line ]</h3>
+
+  <p id="introductionLine2"><strong>Arik: </strong> Taking care of yourself is critical to being a good developer and a good team member. Make sure to check in with yourself regularly.</p>
+  <p id="introductionLine3"><strong>Arik: </strong> To check your wellness levels, <br> type "<span style="color:white">How am I feeling</span>" in the command line, and click Submit.</p>
+  <h5 id="introductionLine4" style="color:white"><strong>[ Please Type "How am I feeling" Now ]</strong></h5>
+  <p id="introductionLine5"><strong>Arik: </strong> It’s time to get together with your Dev Teams for the week. Your teams are assigned for you, so just hold tight and you’ll be moved into the right chat. </p>
+  <p id="introductionLine6"><strong>[ You have been assigned to Finch-1 ]</strong> </p>
+  <p id="introductionLine7"><strong>Arik: </strong> Type a greeting to your Dev Team</p>
+
+  <p id="introductionLine8"><strong>Jazzercise Spindrift: </strong> Hi, everyone. My name is Jazzercise Spindrift, and my pronouns are He/They. Before Codis Somnum I got my bachelors in How To Be A Super Chill Dude In Like.. Every Scenario. I really like meditating and the band My Bloody Valentine. Oh, and I’m from Haddonfield, Illinois.</p>
+
+  <p id="introductionLine8a"><strong>Corky Funez:</strong>
+  Hello everybody, my name is Corky. My pronouns are He/Him. I like sick music you’ve never heard of, face tattoos, and trader joe’s hummus. I play guitar better than your dad. I came here to be the best and NOBODY will stop me.</p>
+  
+  <p id="introductionLine8b"><strong>Pollo Loco: </strong>What's good! My name is Pollo Loco, my pronouns are he/him. I like chillin with the homies and cruisin round the beach! I also love to drive my car at night. No lights. I've never been good at school but I like computers so I said “why not?” Don’t betray me or you will regret it!</p>
+
+  <p id="introductionLine8c"><strong>Bob: </strong>Hello everybody, my name is Bob. My pronouns are He/Him. I like music, hockey, and good people. I play all kinds of sports and video games but I prefer racing ones overall. I came here to learn some code and listen to chill music while doing it.</p>
+
+  <p id="introductionLine8d"><strong>Abigail Diamond: </strong>Hi, there. My name is Abigail Diamond. I’m originally from Transylvania. My pronouns are she/her. Before Codis Somnum I used to work as a living mannequin. I really like to embroider tablecloths, and bathing in iron nectar. It keeps me young and beautiful. </p>
+
+
+  <p id="introductionLine9"><strong>Bob:</strong> Good morning.</p>
+  <p id="introductionLine10"><strong>Abigail Diamond:</strong> *waves*</p>
+  <p id="introductionLine11"><strong>Corky Funez:</strong> Did you guys hear that a bunch of people from the last cohort got jobs at Amazon? </p>
+  <p id="introductionLine12"><strong>Jazzercise Spindrift:</strong> Woah. That’s cool.</p>
+  <p id="introductionLine13"><strong>Corky Funez:</strong> Yeah, but I heard that nobody's heard from them since.</p>
+  <p id="introductionLine14"><strong>Pollo Loco:</strong> Someone told me one of them died in a self-driving car accident.</p>
+  <p id="introductionLine15"><strong>Corky Funez:</strong> Some of us were in that cohort. I tried to message my old mentor, but I haven't heard anything back. :[</p>
+  <p id="introductionLine16"><strong>Jazzercise Spindrift:</strong> Same! :[</p>
+  <p id="introductionLine17"><strong>Jazzercise Spindrift:</strong> I saw that groovy playlist Arik recommended to us in their old chat. Everyone was really diggin' it, man.</p>
+  <p id="introductionLine18"><strong>Pollo Loco:</strong> I’m not really into lofi</p>
+  <p id="introductionLine19"><strong>Bob:</strong> I think to be a good developer, you must.</p>
+  <p id="introductionLine20"><strong>Pollo Loco:</strong> I guess I’ll get used to it…</p>
+  <p id="introductionLine21"><strong>You:</strong> I guess we all will. </p>
+</div>
+
+<div id="jazzerciseScene">
+
+  <!-- <p>You're Now Paired with Jazzercise Spindrift</p> -->
+
+  <p id="jazzerciseLine1"><strong>Jazzercise: </strong> Namaste. Tell me dear pair, how are you feeling about the material so far?</p>
+
+  <div id="jazzerciseQ1">
+    <p id="jazzerciseQ1A1" class="answers">I’m basically Neo from the Matrix and I don’t need this course.</p>
+  @* JS: ...That must be really great for you . *@
+    <p id="jazzerciseQ1A2" class="answers">I don’t know. I haven’t done any of the work.</p>
+@* JS: Well, today should be a cerebral experience for both of us then. *@
+    <p id="jazzerciseQ1A3" class="answers">I’m feeling pretty good about it. Maybe a little confused about what an object is.. 
+    </p>
+@* JS: Well, you see… An object grows out of the code much like an apple emerges from an apple tree. The object isn’t simply thrust into the code like some sort of outside being.  *@
+    <p id="jazzerciseQ1A4" class="answers">I am feeling pretty good! How are you feeling about the material?.</p>
+@* JS: I feel a resounding call to be patient with my naivety and remain open as a growth mindset requires me to be.   *@
+  </div>
+
+  <p id="jazzerciseLine2"><strong>Jazzercise: </strong> It looks like we are building an app to determine your WPM typed on the planets Saturn, Neptune, and Uranus. Do you remember how our first test should be written?</p>
+
+  <div id="jazzerciseQ2">
+    <p id="jazzerciseQ2A1" class="answers">Yes, we begin with a “describe” statement  that targets our exported JS class.</p>
+@* JS: How very perceptive of you... *@
+    <p id="jazzerciseQ2A2" class="answers">Well, there’s probably a few ways we could start this. Do you have a preference?
+    </p>
+@* JS: You are most certainly right, and no.. I do not have a preference... *@
+    <p id="jazzerciseQ2A3" class="answers">Do I remember? Of course I remember. Question is...Do you remember?
+    </p>
+@* JS: I simply choose to empty my memory compartment to ensure there is space for the most important bits of wisdom. *@
+    <p id="jazzerciseQ2A4" class="answers">I’d really prefer it if we did not talk and just typed.</p>
+@* JS: Everyone’s journey is another universe of possibilities and I respect that.  *@
+    </div>
+
+    <p id="jazzerciseLine3"><strong>Jazzercise: </strong> I don’t mean to interrupt but, did you hear the ultra-secret-info about Amazon developing a bio-weapon?</p>
+
+
+    <div id="jazzerciseQ3">
+      <p id="jazzerciseQ3A1" class="answers">You’re not a flat-earther too are you?</p>
+@* JS: You know the name “Earth” is just five letters we assembled out of thin air for this being we live on! *@
+      <p id="jazzerciseQ3A2" class="answers">I would prefer if we just stayed on topic.</p>
+@* JS: Your honesty is… admirable I suppose. *@
+      <p id="jazzerciseQ3A3" class="answers">I think I did see something about that. Pretty crazy stuff huh?
+      </p>
+@* JS: Yes it is indeed, very crazy stuff, and there is much more to the story than meets the eye. *@
+    <p id="jazzerciseQ3A4" class="answers">Oh yeah, they’ve been dropping clues about that since it came out that Bozos was a lizard from neptune.
+    </p>
+@* JS: I….didn’t know...about that yet... *@
+  </div>
+
+  <p id="jazzerciseLine4"><strong>Jazzercise: </strong> I don’t mean to interrupt but, did you hear the ultra-secret-info about Amazon developing a bio-weapon?</p>
+  <div id="jazzerciseQ4">
+    <p id="jazzerciseQ4A1" class="answers">Omg right?!</p>
+@* JS: To which God or Goddess do you refer to when making such a bold statement? *@
+    <p id="jazzerciseQ4A2" class="answers">Yeah, that used to happen to me too.</p>
+@* JS: Ah, a quick learner you are, my life pair. *@
+    <p id="jazzerciseQ4A3" class="answers">We should probably just copy and paste someone else's repo for this.
+    </p>
+@* JS: WHOA! That’s so not cool my friend.  *@
+    <p id="jazzerciseQ4A4 3" class="answers">Wait… Are you writing tests for this?</p>
+@* JS: Perhaps we should just build separate projects? *@
+  </div>
+
+  <p id="jazzerciseLine5"><strong>Jazzercise: </strong> Phew.. this project is really tedious. I think I need some more matcha tea? Would you like some?</p>
+  <div id="jazzerciseQ5">
+    <p id="jazzerciseQ5A1" class="answers">I would love some matcha tea.</p>
+@* JS: Cool, just give me a sec to hand grind these leaves one by one. This is the way. *@
+    <p id="jazzerciseQ5A1" class="answers">You should get whatever you need, but I am okay without tea.</p>
+@* JS: Bless, I'll be back in two shakes of my inner self’s tail. *@
+    <p id="jazzerciseQ5A1" class="answers">I prefer CBD energy drinks myself.</p>
+@* JS: That sounds like an abuse of one’s inner power. *@
+    <p id="jazzerciseQ5A1" class="answers">That tea is so gross and it makes people turn orange.</p>
+@* JS: That is an outright filthy lie. *@
+  </div>
+
+<!-- <p>You and Jazzercise work together on the project for a while, but you notice Jazzercise becoming a bit… unwell.</p> -->
+
+  <p id="jazzerciseLine6"><strong>Jazzercise: </strong>  I think I had too much matcha tea. Or maybe I just need a break? Are we close to being done?</p>
+    <div id="jazzerciseQ6">
+      <p id="jazzerciseQ6A1" class="answers">...We’re pretty close. Just need to write the README.md.</p>
+    </div>  
+
+      <p id="jazzerciseLine7"><strong>Jazzercise: </strong> I feel dizzy now too. How are you feeling?. </p>
+    <div id="jazzerciseQ7">
+      <p id="jazzerciseQ7A1" class="answers">I think I’m okay. Maybe I should check...</p>
+    </div> 
+
+      <p id="jazzerciseLine8"><strong>Jazzercise: </strong> Let’s break for lunch early so I can consult my guides on how to best repair my soul loss.  </p>
+    <div id="jazzerciseQ8">
+      <p id="jazzerciseQ8A1" class="answers">Sounds legit.</p>
+    </div> 
+
+      <p id="jazzerciseLine9"><strong>Jazzercise: </strong> Humming  “friend of the Devil...”. </p>
+    <div id="jazzerciseQ9">
+      <p id="jazzerciseQ9A1" class="answers">...what?</p>
+    </div> 
+
+      <p id="jazzerciseLine10"><strong>Arik: </strong> Hey, Hi, how is everyone doing here? </p>
+    <div id="jazzerciseQ10">
+      <p id="jazzerciseQ10A1" class="answers">Doing great!</p>
+      <p id="jazzerciseQ10A2" class="answers">Okay</p>
+      <p id="jazzerciseQ10A3" class="answers">I think Jazzercise may need some help...</p>
+      <p id="jazzerciseQ10A4" class="answers">I'm not sure how to respond to this.</p>
+    </div> 
+      <p id="jazzerciseLine11"><strong>Jazzercise: </strong> I think the grateful dead did a cover of this track... </p>
+
+      <p id="jazzerciseLine12"><strong>Arik: </strong> Have you been working alone this whole time?</p>
+    <div id="jazzerciseQ12">
+      <p id="jazzerciseQ12A1" class="answers">No.</p>
+      <p id="jazzerciseQ12A2" class="answers">Yes?</p>
+      <p id="jazzerciseQ12A3" class="answers">What do you mean? I'm not alone.</p>
+      <p id="jazzerciseQ12A4" class="answers">Please help me. I'm scared.</p>
+    </div>
+
+      <p id="jazzerciseLine13"><strong>Jazzercise: </strong> MMMMAAAATTTCCCHHHAA!</p>
+
+      <p id="jazzerciseLine14"><strong>Arik: </strong> I suggest you find someone to pair with.</p>
+</div>
+
+<div id="bobScene">
+
+<!-- <p>[ You're Now Paired with [Bob] ]</p> -->
+
+  <p id="bobLine1"><strong>Bob: </strong> Hello, my name is Bob. We will work together now.
+We will write code and complete the project now. Choose Yes or No.
+</p>
+  <div id="bobQ1">
+    <p id="bobQ1A1" class="answers">Let's do it.</p>
+@* Bob: Awesome, let us begin. *@
+    <p id="bobQ1A2" class="answers">Can we take a break first?</p>
+@* Bob: First we work. We will schedule a break for later. *@
+    <p id="bobQ1A3" class="answers">I think I'd rather work alone today.
+</p>
+@* Bob: That is very rude. Per our teacher, we are to work together today, *@
+  </div>
+
+    <p id="bobLine2"><strong>Bob: </strong> Who will host the live share?</p>
+
+  <div id="bobQ2">
+    <p id="bobQ2A1" class="answers">I'll do it.</p>
+@* Great. I like initiative. I also like snakes. *@
+    <p id="bobQ2A2" class="answers">Either way works, do you want to? </p>
+@*  Bob: Yes, I will host. The snake always hosts his own dinner parties. He invites the rat and the mouse. *@
+    <p id="bobQ2A3" class="answers">I think I'd rather work alone today.</p>
+@* Bob: Don't be lazy, take charge. Like the snake takes charge of the rat when it twists around it to kill.*@
+  </div>
+
+  <p id="bobLine3"><strong>Bob: </strong> Do you have a project idea?</p>
+
+  <div id="bobQ3">
+    <p id="bobQ3A1" class="answers">How about we write a text based game about a student in a class where things are slowly getting wonkier and wonkier…?</p>
+@* Bob: That sounds boring. Instead we will do my idea. Create a snake game. I will be the snake, and you will be the rat.*@
+    <p id="bobQ3A2" class="answers">I have no idea</p>
+@* Bob: We will do my idea then: create a snake game. The game will be one in which the stakes are high. Are you prepared? *@
+    <p id="bobQ3A3" class="answers">We could make a connect 4 game?</p>
+@* Bob: Sure, and when we play the winner will get $10 *@
+@* [autoanswer] You: I don’t have $10. Didn’t you tell me you like snakes? Let’s make a snake game.  *@
+    <p id="bobQ3A4" class="answers">How about we write a program that makes this entire course make more sense!</p>
+@* Bob: What is not making sense? Everything is perfectly sensible here. We will do my idea: create a snake game. The snake plays a game with the mouse, but the mouse only runs for his life. *@
+  </div>
+
+  <p id="bobLine4"><strong>Bob: </strong> Brysnrsgstgbs</p>
+  <div id="bobQ4">
+    <p id="bobQ4A1" class="answers">Umm what?</p>
+@* Bob: I am sorry, my snake slithered across my keyboard*@
+    <p id="bobQ4A2" class="answers">Aetbwetb to you too.</p>
+@* Bob: What? I do not understand you. *@
+    <p id="bobQ4A3" class="answers">Oh no… here we go again. Not you too, Bob!</p>
+@* Bob: What are you talking about? I am just here coding with you. Nothing sinister is happening.   *@
+    <p id="bobQ4A4 3" class="answers">[You ignore this obvious nonsense]</p>
+@* Bob: Blsuthehv?*@
+  </div>
+
+  <p id="bobLine5"><strong>Bob: </strong> So tell me about yourself as I have told you about myself. What kind of music do you prefer?</p>
+  <div id="bobQ5">
+    <p id="bobQ5A1" class="answers">I love Taylor Swift.</p>
+@* Bob: I am not so into that. She is like a small mouse. *@
+    <p id="bobQ5A2" class="answers">Daft Punk</p>
+@* Bob: This is dope! I knew I liked you. My snake and I shimmy to them frequently. *@
+    <p id="bobQ5A3" class="answers">I'm really digging this Lo-Fi playlist Arik shared.</p>
+@* Bob: I am also. We will turn it up! *@
+@* <p>[[ Bob turns the music in his headphones up so high that you can hear it through the speakers. You also hear a strange, high-pitched whining. It makes you feel dizzy ]]</p> *@
+    <p id="bobQ5A4" class="answers">I'm into Pop Gone Punk</p>
+@* JBob: I will not ask you about this. It sounds like mouse musicS: That is an outright filthy lie. *@
+  </div>
+
+@* <p>[[ Bob turns the music in his headphones up so high that you can hear it through the speakers. You also hear a strange, high-pitched whining. It makes you feel dizzy ]]</p> *@
+
+  <p id="bobLine6"><strong>Bob: </strong> What happened to the music?</p>
+  <div id="bobQ6">
+    <p id="bobQ6A1" class="answers">Who cares, Thank God. Blessed quiet.</p>
+@* Bob: I liked the music. I will order us new headphones from Amazon. 
+  Bob: Notable Fact: the Amazon is the home of the Anaconda, a great snake.
+ *@
+    <p id="bobQ6A2" class="answers">Did your headphones break too? At the same time?</p>
+@* Bob: What a coincidence! We will order new from Amazon. 
+Bob: Notable Fact: the Amazon is full of snakes and other creatures which fill my heart with joy and my throat-sac with venom.
+*@
+    <p id="bobQ6A3" class="answers">Ugh, that music was the only thing keeping me going. I feel terrible without it. </p>
+@* Bob: How do we solve this problem?
+[auto answer] You: I’ll order new headphones from Amazon. They should be here by tomorrow.
+Bob: Send me the link. I will order them, too.
+ *@
+    <p id="bobQ6A4" class="answers"> Huh, I guess I’ll listen to something else.
+    </p>
+@* Bob: No. We must be in sync to pair. We will get new headphones and put Arik’s music back on. Our minds must twine together like the tails of two snakes. *@
+  </div>
+
+  <p id="bobLine7"><strong>Bob: </strong> [[ Seconds after the headphones are ordered, an Amazon box drops from nowhere onto your desk ]] </p>
+  <div id="bobQ7">
+    <p id="bobQ7A1" class="answers">Woah, my headphones are here already. I thought they were joking about drone delivery</p>
+@* Bob: Amazon never jokes. Much like Bob. My headphones have arrived as well.*@
+    <p id="bobQ7A2" class="answers">Wow, when did 1 day shipping become 1 second shipping?</p>
+@* Bob: You are exaggerating. Mine have arrived also. Put on the headphones.*@
+    <p id="bobQ7A3" class="answers">Such speed </p>
+@* Bob: Very convenience*@
+    <p id="bobQ7A4" class="answers">Wait.. what? Those headphones I just ordered just basically appeared on my desk. Like, they fell out of thin air. WTF?</p>
+@* Bob: You have never seen a box drop out of the other planes before? You must not have Prime. Sad. *@
+
+  </div>
+
+  <p id="bobLine8a"><strong>Jazzercise: </strong> Woah, man! I just got back from pouring some fresh ‘buch’ and now my headphones are borked! </p>
+  <p id="bobLine8b"><strong>Abigail: </strong> My headphones have also ceased to pump life-giving music into my heart. </p>
+  <p id="bobLine8c"><strong>Abigail: </strong> My pair and I ordered new ones on Amazon, and they’ve already arrived. My blood sings with relief! </p>
+  <p id="bobLine8d"><strong>Jazzercise: </strong> Hey, we did the same thing! Cosmic.</p>
+  <p id="bobLine8e"><strong>Jazzercise: </strong> I think it was Timothy Leary who said, “I don’t believe in coincidence.”</p>
+  <p id="bobLine8f"><strong>Jazzercise: </strong> Or maybe that was William H. Sullivan?</p>
+  <p id="bobLine8g"><strong>Corky: </strong> Pollo and I both got the ChillHop5666 pair from Amazon Basics. The sound quality is B A N A N A S!.</p>
+  <p id="bobLine8h"><strong>Jazzercise: </strong> Those are also the ones we got!</p>
+  <p id="bobLine8i"><strong>Bob: </strong> We are the same.</p>
+  <p id="bobLine8j"><strong>Abigail:</strong> Same!</p>
+  <div id="bobQ8">
+    <p id="bobQ8A1" class="answers">Wait, so everyone’s headphones broke? At the same time? That’s bonkers.</p>
+@* Bob: Life is full of these random surprises. Try not to think about it too hard. *@
+    <p id="bobQ8A2" class="answers">This is such a weird coincidence. I’m a little freaked out.</p>
+@* Bob: You worry for nothing, my friend. *@
+    <p id="bobQ8A3" class="answers">Well, cool! Now everyone has a quality pair of headphones!</p>
+@* Bob: Yes, now we will all be in sync when we pair. We will hear the same code song. *@
+    </div>
+  <p id="bobLine9"><strong>Bob:</strong> My friend, you must complete the snake game alone. My real life snake has become very ill.</p>
+  <div id="bobQ9">
+    <p id="bobQ9A1" class="answers">Oh no. I’m so sorry! What happened?</p>
+    @* I will not compromise the snake’s privacy. Suffice it to say, she has eaten what she should not. *@
+    <p id="bobQ9A2" class="answers">I thought you were joking about all the snake stuff…</p>
+    @* I told you once that I do not joke. That was not a joke. *@
+    <p id="bobQ9A3" class="answers">Okay…</p>
+    @* Goodbye. I will miss you. *@
+    <p id="bobQ9A4" class="answers"> ... </p>
+    @* Good luck to you...my friend. *@
+  </div>
+  @* <p>[[ Bob has left the chat channel ]]</p> *@
+  <p id="bobLine10"><strong>Arik:</strong>  Hey, Hi, how is everyone doing here?</p>
+  <div id="bobQ10">
+    <p id="bobQ10A1" class="answers">Doing great!</p>
+    @* Have you been working alone this whole time? *@
+    <p id="bobQ10A2" class="answers">Okay</p>
+    @* Have you been working alone this whole time? *@
+    <p id="bobQ10A3" class="answers">Bob had to sign off.</p>
+    @* Skip to #11. *@
+    <p id="bobQ10A4" class="answers"> Bob had to go. His...snake? got sick? </p>
+    @* I’m sorry to hear that. Poor thing. [auto response] You: Yeah...I guess.*@
+  </div>
+    <p id="bobLine11"><strong>Arik:</strong> I suggest you find someone to pair with.</p>
+    
+</div>
+
+<div id="corkyScene">
+
+<!-- <p>You're Now Paired with Corky Funez</p> -->
+
+
+  <p id="corkyLine1"><strong>Corky: </strong> What's up, n00b</p>
+
+  <div id="corkyQ1">
+    <p id="corkyQ1A1" class="answers">You're the n00b.</p>
+      @* C: Lol. Chill, d00d. We're both n00bs. *@
+    <p id="corkyQ1A2" class="answers">...Just happy to be here, I guess.</p>
+      @* C: You & me both, brother. *@
+    <p id="corkyQ1A3" class="answers">I need 10 minutes to get coffee.</p>
+      @* C: Uh...ok. [When you return]*@
+    <p id="corkyQ1A4" class="answers">Not much, thanks for asking.</p>
+      @* C:Sure thing. Moving on..*@
+  </div>
+
+    <p id="corkyLine2"><strong>Corky: </strong> Soooo, who should drive this puppy today?</p>
+
+  <div id="corkyQ2">
+    <p id="corkyQ2A1" class="answers">I'll drive.</p>
+      @* C: Cool. I'm excited to start this project with you! :D *@
+    <p id="corkyQ2A2" class="answers">I would love to drive. In fact, I'll build the entire project!</p>
+      @* C: Ha ha. Wait, really?*@
+<!-- <p>As it turns out, you have no idea how to build the project. You and Corky will have to work together.</p> -->
+    <p id="corkyQ2A3" class="answers">Can you drive? I'm just not feeling it today?</p>
+      @* C:I guess that's cool.*@
+    <p id="corkyQ2A4" class="answers">I think we should just chat about our favorite TV shows instead.</p>
+      @* C:  I love the Power Rangers. But I also love to code. Let's get to work! *@
+  </div>
+
+<!-- <p>You and Corky work together on the project for a while.</p> -->
+
+  <p id="corkyLine3"><strong>Corky:</strong> Are we like...gonna have to write some sort of fandangled loopdy do?</p>
+
+
+  <div id="corkyQ3">
+    <p id="corkyQ3A1" class="answers">Yes, I recommend a forEach loop.</p>
+      @* C: Okay. For Each beat of your heart, I'll eat one chocolate chip.*@
+    <p id="corkyQ3A2" class="answers">I think we do want to use either a for loop or maybe some other kind.</p>
+      @* C: That sounds good.*@
+    <p id="corkyQ3A3" class="answers">Can you just figure it out yourself?</p>
+      @* C: Wow. Rude. You're clearly tired. I'll drive for a while. *@
+    <p id="corkyQ3A4" class="answers">What's a loopdy do, you goober?</p>
+      @* C: You know, a LOOPDY DO! 🤪🤪🤪 *@
+  </div>
+
+  <!-- <p>You and Corky work together on the project for a while.</p> -->
+
+  <p id="corkyLine4"><strong>... </strong> You start to get a gnarly headache</p>
+  <div id="corkyQ4">
+    <p id="corkyQ4A1" class="answers">Change your music to your favorite soothing ocean waves & sweetly babbling brooks playlist</p>
+      @* Under the ocean currents, a beat is rising…*@
+      @*You can feel the urge to sleep and study taking hold.*@
+      @*You realize the playlist is still playing.*@
+    <p id="corkyQ4A2" class="answers">Put on an audiobook about Rising & Grinding and try to ignore the headache</p>
+      @* Daymond John starts to tell you how spectacularly a killer work ethic can pay off. *@
+      @*His voice is rhythmic. It’s soothing. You’re nodding along.*@
+      @*This isn’t Rise & Grind. This is chill hop. *@
+      @*You realize the playlist is still playing. *@
+    <p id="corkyQ4A3" class="answers">Relisten to old voicemails from your long dead Grandma telling you she’s mailed the casserole you like so much</p>
+      @*Grandma’s sweet, elderly voice kisses your little earletts *@
+      @*But it starts quickly to sound warped, drowsy, chilllll.*@
+      @*You realize the playlist is still playing.*@
+    <p id="corkyQ4A4 3" class="answers">Take a legal dose of your favorite plant-based medicine and GET BACK TO WORK! </p>
+      @* Your vision goes slightly blurry and sick 90’s hip-hop beats start to creep in “Wu-Tang Clan A’int nothin to…” before fading back into Arik’s playlist. *@
+  </div>
+
+  <!-- <p>You and Orkycay work together on the ojectpray for a while.</p> -->
+
+  <p id="corkyLine5"><strong>corky: </strong>Ok, so we ademay our ooplay. Cool. I have a guitar edalpay that ooplays. Did you know usicmay ancay ivedray ouyay azycray ?</p>
+  <div id="corkyQ5">
+    <p id="corkyQ5A1" class="answers">I also enjoy the guitar.</p>
+      @* C:  I have a guitar that looks ikelay ayay idsquay. *@
+    <p id="corkyQ5A2" class="answers">Cool, yeah. What's our next step?</p>
+      @* C: on'tday urntay offyay ethay usicmay*@
+    <p id="corkyQ5A3" class="answers">Umm..You're starting to sound weird..</p>
+      @* C: Eirdway? What do you eanmay? *@
+    <p id="corkyQ5A4" class="answers">Listen up, jerk. I don't want to hear that kind of language from you.</p>
+      @* C: Woah, calm down! I'm just talking about guitars. *@
+  </div>
+
+<!-- <p>Ouyay and Orkycay orkway ogethertay on the project orfay a ilewhay.</p> -->
+
+  <p id="corkyLine6"><strong>corky: </strong> anmay , iyay on'tday owknay ifyay iyay evenyay illstay antway otay ebay ayay odercay , owhay aboutyay ouyay ? </p>
+    <div id="corkyQ6">
+      <p id="corkyQ6A1" class="answers">...what?</p>
+    </div>  
+
+      <p id="corkyLine7"><strong>corky: </strong> iyay inkthay iyay antway otay ebay ayay idsquay ersonpay insteadyay . at'sthay atwhay ethay usicmay oldtay emay . </p>
+    <div id="corkyQ7">
+      <p id="corkyQ7A1" class="answers">...what?</p>
+    </div> 
+
+      <p id="corkyLine8"><strong>corky: </strong>accordingyay otay isthay illhopchay annelchay , idsquay ancay eatyay upyay otay ayay ousandthay eoplepay ayay ayday . </p>
+    <div id="corkyQ8">
+      <p id="corkyQ8A1" class="answers">...what?</p>
+    </div> 
+
+      <p id="corkyLine9"><strong>corky: </strong>  idsquay, idsquay, idsquay, idsquay, idsquay, idsquay, idsquay, idsquay, idsquay.</p>
+    <div id="corkyQ9">
+      <p id="corkyQ9A1" class="answers">...what?</p>
+    </div> 
+
+      <p id="corkyLine10"><strong>Arik: </strong> How’s it going in here?</p>
+    <div id="corkyQ10">
+      <p id="corkyQ10A1" class="answers">Fine.</p>
+      <p id="corkyQ10A2" class="answers">Okay.</p>
+      <p id="corkyQ10A3" class="answers">Something's wrong with Corky.</p>
+      <p id="corkyQ10A4" class="answers">I'm scared, please help me.</p>
+    </div> 
+      <p id="corkyLine11"><strong>corky: </strong> at'swhay ouryay avoritefay ayway otay ieday ? </p>
+
+      <p id="corkyLine12"><strong>Arik: </strong> Have you been working alone this whole time?</p>
+    <div id="corkyQ12">
+      <p id="corkyQ12A1" class="answers">No.</p>
+      <p id="corkyQ12A2" class="answers">Yes?</p>
+      <p id="corkyQ12A3" class="answers">What do you mean? I'm not alone.</p>
+      <p id="corkyQ12A4" class="answers">Please help me. I'm scared.</p>
+    </div>
+
+      <p id="corkyLine13"><strong>corky: </strong> at'swhay ouryay avoritefay ayway otay ieday ? </p>
+
+      <p id="corkyLine14"><strong>Arik: </strong> I suggest you find someone to pair with.</p>
+</div>
+
+<div id="abigailScene">
+
+<!-- <p>[ You're Now Paired with [Abigail Diamond] ]</p> -->
+
+
+  <p id="abigailLine1"><strong>abigail: </strong> Hi, I’m Abigail (she/her). It’s nice to meet you!</p>
+
+  <div id="abigailQ1">
+    <p id="abigailQ1A1" class="answers">Hi, Abigail. Nice to meet you, too</p>
+      @* A: Have we met?*@
+    <p id="abigailQ1A2" class="answers">This has been a weird day for me. Nice to meet someone normal.</p>
+      @* A: It’s nice to be someone normal. *@
+    <p id="abigailQ1A3" class="answers">Whatever.</p>
+      @* A: Umm... excuse me? *@
+    <p id="abigailQ1A4" class="answers">Hi. What project are you working on? </p>
+      @* A: What music? Oh, you mean the playlist. I don’t even notice it anymore.*@
+  </div>
+
+    <p id="abigailLine2"><strong>Abigail: </strong> I’m working on the Text Analyzer. I hope it’s okay with you if I analyze your text.</p>
+
+  <div id="abigailQ2">
+    <p id="abigailQ2A1" class="answers">That’s cool</p>
+      @* A: Great! I can’t wait to read between your lines. *@
+    <p id="abigailQ2A2" class="answers">What? What do you mean analyze my text?</p>
+      @* A: I mean expose every pattern that makes your text yours of course! *@
+    <p id="abigailQ2A3" class="answers">Uh, yeah, that seems fine.</p>
+      @* A:Well, if you’re apprehensive could we focus your attention on my text?*@
+    <p id="abigailQ2A4" class="answers">Nice! I’m stoked.</p>
+      @* A: I often stoke a fire under my iron nectar baths. It is the traditional way of heating bloo--nectar. *@
+  </div>
+
+
+<p id="abigailLine2a">Abigail: It says “Write a function that omits offensive words. For the purpose of this application, there are only four offensive words to worry about: zoinks, muppeteer, biffaroni, and loopdaloop. These words make the investors behind Text Analzyer fly into a rage.” </p>
+<p id="abigailLine2b">Are these real offensive words in the US?</p>
+<p id="abigailLine2c">You and Abigail work together on the project for a while.</p>
+
+  <p id="abigailLine3"><strong>abigail:</strong> So, what’s your story, darling mortal? Who are you? I want to know everything about you.</p>
+
+
+  <div id="abigailQ3">
+    <p id="abigailQ3A1" class="answers">I’m <PLAYERNAME>. I’m just a young code student trying to make it in this tough old world.</p>
+      @* A: You sound a little bit country. And I’m a little bit rock and roll.*@
+    <p id="abigailQ3A2" class="answers">What do you mean? How am I not myself? How am I not… myself?</p>
+      @* A: How am I not myself? How am I not myself? How am...I...not..myself.*@
+    <p id="abigailQ3A3" class="answers">Did you just call me darling? This feels a little personal.</p>
+      @* A: Back in my homeland everyone is a darling and sugar is shared  for free, Honey. *@
+    <p id="abigailQ3A4" class="answers">Who are YOU? </p>
+      @* A: I think we should get back to work on the biffaroni.*@
+  </div>
+
+  <!-- <p>You and Abigail work together on the project for a while.</p> -->
+
+  <p id="abigailLine4"><strong>... </strong> Zoinks! I have a question. Did we already muppeteer the biffaroni? And do you remember how to do the hordyblord loopdaloop?</p>
+  <div id="abigailQ4">
+    <p id="abigailQ4A1" class="answers">WTF are you talking about?</p>
+      @* A: I am talking about the project. It is deep in my veins.*@
+    <p id="abigailQ4A2" class="answers">I think the Text Analyzer is getting to you.</p>
+      @* A: What really gets to me would certainly cause your face to run white!*@
+    <p id="abigailQ4A3" class="answers">Is your keyboard broken?</p>
+      @*A: Broken is the eternal tyrant of time marching on by while I wallow in eternity...*@
+    <p id="abigailQ4A4 3" class="answers">I’m working on the boldPassage() function.</p>
+      @* REPLACE WITH: I’m pretty sure I muppeteered the biffaroni, but I don’t remember anything about the hordyblord. Let me check the lesson.*@
+      @* A: Your method should do this. *@
+      @* A: Your method should do this. *@
+      @* A: Your method... *@
+  </div>
+
+  <!-- <p>You and Biffaroni work together on the Loopdaloop for a while.</p> -->
+
+  <p id="abigailLine5"><strong>abigail: </strong> Did you know that today, your most common words were “I’m” and “nice”? And I think it’s true, <PLAYERNAME>. You are nice. I can smell it in your blood.</p>
+  <div id="abigailQ5">
+    <p id="abigailQ5A1" class="answers">Wow, that’s really kind of you.</p>
+      @* REPLACE WITH: bigram	Frequency
+        i m	5
+        are you	3
+        you mean	3
+        nice to	3
+        i don	2
+        don t	2
+        <PLAYER NAME>	2
+        m just	2
+        what do	2
+        do you	2
+        to meet	2
+        someone normal	2
+        wtf are	1
+        you talking	1
+        talking about	1
+        about i	1
+        i think	1
+        think the	1
+        the text	1
+        text analyzer	1
+      *@
+      @* A:  That is some fine biffaroni, my darling. *@
+    <p id="abigailQ5A2" class="answers">Stop smelling my blood, please.</p>
+      @* A: Once a shark is in range of the scent of blood they have no choice but to imbibe in its stench.*@
+    <p id="abigailQ5A3" class="answers">I like you, too.</p>
+      @* A: How are your new headphones fitting on your ears? Mine feel very soft. Almost like my head is floating.*@
+    <p id="abigailQ5A4" class="answers">Are you really counting my words?</p>
+      @* A: How are your new headphones fitting on your ears? Mine feel very soft. Almost like my head is floating. *@
+  </div>
+
+<!-- <p>You: 3, and: 3, Abigail: 2, work: 3, on: 3, the: 3, project: 2, for: 3, a: 3, while: 3</p> -->
+
+  <p id="abigailLine6"><strong>abigail: </strong> I truly love this playlist. I haven’t heard music like this for what feels like a hundred years.</p>
+    <div id="abigailQ6">
+      <p id="abigailQ6A1" class="answers"> Ugh... I don't think I like it at all.</p>
+       @* A: Text analysis: 9 S’s, 8 L’s, 8 T’s, 13 i’s, 5 A’s, 5 O’s, 4 E’s, 4 Y’s, 4 N’s, 4 U’s, 3 M’s, 3 H’s, 2 R’s, 2 V’s, 2 D’s, 1 G, P, C, B, J. *@
+      <p id="abigailQ6A2" class="answers">It's giving me a headach.</p>
+      @* REPLACE WITH: I think I could live a hundred years and hear nothing more beautiful.” *@
+      @* Text analysis: 9 S’s, 8 L’s, 8 T’s, 13 i’s, 5 A’s, 5 O’s, 4 E’s, 4 Y’s, 4 N’s, 4 U’s, 3 M’s, 3 H’s, 2 R’s, 2 V’s, 2 D’s, 1 G, P, C, B, J. *@
+      <p id="abigailQ6A3" class="answers">It’s alright, I guess.</p>
+       @* Text analysis: 9 S’s, 8 L’s, 8 T’s, 13 i’s, 5 A’s, 5 O’s, 4 E’s, 4 Y’s, 4 N’s, 4 U’s, 3 M’s, 3 H’s, 2 R’s, 2 V’s, 2 D’s, 1 G, P, C, B, J. *@
+      <p id="abigailQ6A4" class="answers">I’m feeling seriously relaxed.</p>
+      @* Text analysis: 9 S’s, 8 L’s, 8 T’s, 13 i’s, 5 A’s, 5 O’s, 4 E’s, 4 Y’s, 4 N’s, 4 U’s, 3 M’s, 3 H’s, 2 R’s, 2 V’s, 2 D’s, 1 G, P, C, B, J.*@
+    </div>  
+
+      <p id="abigailLine7"><strong>abigail: </strong> Okay. 1 o, 1 k, 1 a, 1 y. We one W one E. Have H A V E 1 1 1 1. To I II. MUPPETEER. 1 1 2 3 1 1. NOW! 111.</p>
+    <div id="abigailQ7">
+      <p id="abigailQ7A1" class="answers">You’re really freaking me out right now.</p>
+      @* A: You’re really muppeteering me, darling.*@
+      <p id="abigailQ7A2" class="answers">Lol, you’re so funny.</p>
+      @* A: Ha Ha Biffaroni, Ha, biffaroni, Hee hee, biffaroni! :D*@
+      <p id="abigailQ7A3" class="answers">This is real commitment to a bit, dude. But I feel like we need to get back to work.</p>
+      @* A:I have been toiling for a thousand years. Let’s take a 10 minute biffaroni.*@
+      <p id="abigailQ7A4" class="answers">WHAT ARE YOU TALKING ABOUT, YOU FREAK?</p>
+      @* A:Clearly you have a long way to go before you can speak the tongue of tongues, darling naif.*@
+    </div> 
+
+      <p id="abigailLine8"><strong>abigail: </strong> Muppeteer the biffaroni. e: 4p: 2 t: 2 r: 2 i: 2 f: 2 M: 1 u: 1 h: 1 b: 1 a: 1 o: 1 n: 1!!!!
+</p>
+    <div id="abigailQ8">
+      <p id="abigailQ8A1" class="answers">Please stop.</p>
+    </div> 
+
+      <p id="abigailLine9"><strong>abigail: </strong> Muppeteer the BIFFARONI! e: 4p: 2 t: 2 r: 2 i: 2 F: 2 M: 1 u: 1 h: 1 B: 1 A: 1 O: 1 N: 1!!!!</p>
+    <div id="abigailQ9">
+      <p id="abigailQ9A1" class="answers">Please stop.</p>
+    </div> 
+
+      <p id="abigailLine10"><strong>abigail: </strong>I’m sorry. Something is wrong with my keyboard. Let me share this file with you, please.</p>
+    <div id="abigailQ10">
+      <p id="abigailQ10A1" class="answers">Ok...I guess.</p>
+      <p id="abigailLine10a">	-allow Abigail access to your computer-
+        [[ You can’t do anything until you accept ]]
+
+        [[ The giggle happens ]]
+        [[ Optional: Blue screen of death pops up for a moment ]]
+        [[ Gif/video of the lofi girl fills your whole screen; if possible, the music warps and/or overlays w the giggle ]]
+        [[ Video disappears/normal screen resumes — no fade, IMO, just a quick cut to Arik’s entry ]]
+        </p>
+    </div> 
+      <p id="abigailLine11"><strong>Arik: </strong> How's it going in here? </p>
+    <div id="abigailQ11">
+      <p id="abigailQ11A1" class="answers">Fine.</p>
+      <p id="abigailQ11A2" class="answers">Okay.</p>
+      <p id="abigailQ11A3" class="answers">Something's wrong with Abigail.</p>
+      <p id="abigailQ11A4" class="answers">I'm scared, please help me.</p>
+    </div> 
+      <p id="abigailLine12"><strong>Abigail: </strong> What’s your favorite muppet? W: 2 h: 1 a: 3 t: 1’ s: 1 y: 1 o: 3 u: 2 r: 2 f: 1 a: 3 v: 1 o: 3 r: 2 i: 2 t: 3 e: 2 w: 2 a: 3 y: 1 t: 3 o: 3 d: 1 i: 2 e: 2?
+</p>
+
+      <p id="abigailLine13"><strong>Arik: </strong> Have you been working alone this whole time?</p>
+    <div id="abigailQ13">
+      <p id="abigailQ13A1" class="answers">No.</p>
+      <p id="abigailQ13A2" class="answers">Yes?</p>
+      <p id="abigailQ13A3" class="answers">What do you mean? I'm not alone.</p>
+      <p id="abigailQ13A4" class="answers">Please help me. I'm scared.</p>
+    </div>
+
+      <p id="abigailLine13"><strong>abigail: </strong> What’s your FAVORITE MUPPET? W: 2 h: 1 a: 3 t: 1’ s: 1 y: 1 o: 3 u: 2 r: 2 f: 1 a: 3 v: 1 o: 3 r: 2 i: 2 t: 3 e: 2 w: 2 a: 3 y: 1 t: 3 o: 3 d: 1 i: 2 e: 2?</p>
+
+      <p id="abigailLine14"><strong>Arik: </strong> I suggest you find someone to pair with.</p>
+</div>
+
+<div id="polloScene">
+  <!-- <p>[You're now paired with Pollo Loco]</p> -->
+  <p id="polloLine1"><strong>Pollo: </strong> Hey Homie!</p>
+  <div id="polloQ1">
+    <p id="polloQ1A1" class="answers">Hey, Pollo!</p>
+@* Pollo: You seem chill bro! We are gonna be JUST FINE! *@
+    <p id="polloQ1A2" class="answers">Mernin</p>
+@* Pollo: Oh no! Someone woke up on the wrong side of the bed! *@
+    <p id="polloQ1A3" class="answers"> … hey. </p>
+@* Pollo: Wow who peed in your cereal this morning?!*@
+    <p id="polloQ1A4" class="answers"> Whaaaaaat up! </p>
+@* Pollo: That’s the spirit my dude!*@
+  </div>
+
+  <p id="polloLine2"><strong>Pollo: </strong> I’ve been working on the address book project [except it’s a sports car lot], but the bugs in it are crawling out of the screen, bro. Think you can fix it?!</p>
+  <div id="polloQ2">
+    <p id="polloQ2A1" class="answers">I mean, I can try...</p>
+@* Pollo: Cmon bro dont be a n00b! *@
+    <p id="polloQ2A2" class="answers">Bugs don’t actually crawl. Stop being weird.</p>
+@* Pollo: Oh, so you're that type of person! *@
+    <p id="polloQ2A3" class="answers"> Sure, let's take a look.</p>
+@* Pollo: Hell yea bro! You're my kinda guy!!*@
+    <p id="polloQ2A4" class="answers"> Send it on over. I’ll fix it. You just relax. </p>
+@* Pollo: Dang Son! Let’s pair everyday! *@
+  </div>
+
+  <p id="polloLine3"><strong>Pollo: </strong> Let’s get cracking on this, then! Do you want to host?</p>
+  <div id="polloQ3">
+    <p id="polloQ3A1" class="answers">Yeah, for sure.</p>
+@* Pollo: Ight bro, get to work! My screen’s full of flies, so I gotta crush em all. *@
+    <p id="polloQ3A2" class="answers">Up to you. I’ve had a long day.</p>
+@* Pollo: I'm not feeling like it today! A spider just crawled out of my keyboard! *@
+    <p id="polloQ3A3" class="answers"> Can you drive? </p>
+@* Pollo: I don’t know, man! I don’t know! I can’t see my keyboard through all these beetles*@
+    <p id="polloQ3A4" class="answers"> Drive? I haven’t had a license since the incident...that was 10 years ago. </p>
+@* Pollo: That’s wack man! Maybe you shouldn’t drive this code either! Just let me clean these slugs off my keyboard, and I’ll put us in gear. *@
+  </div>
+
+  <p id="polloLine4"><strong>Pollo: </strong> Do you think you can show me how to make the files for the project?!</p>
+  <div id="polloQ4">
+    <p id="polloQ4A1" class="answers">I think you can handle it. </p>
+@* //If the player selects this answer, they actually say: “I feel like centipedes are crawling inside my skin. ”*@
+@* Pollo: Yo, if you got bugs under your skin you need to get to an ER or somethin. *@
+    <p id="polloQ4A2" class="answers">Yeah, just pull up VS Code and I’ll take a look. </p>
+@* Pollo: I'm not feeling like it today! A spider just crawled out of my keyboard! *@
+    <p id="polloQ4A3" class="answers"> Have you not built a project yet? </p>
+@* Pollo: Shoooooot, I've built more projects than this whole cohort. Mostly lego projects though.  *@
+    <p id="polloQ4A4" class="answers"> Sure, can you share your screen so I can see where you're at? </p>
+@* Pollo: Why do you need me to share my screen when you got your own screen? *@
+  </div>
+
+  <p id="polloLine5"><strong>Pollo: </strong> Yo Bro, real quick, did you hear about that self-driving car thing? They wouldn’t stop! It was like they were crazy! Driving into peoples’ houses and over little grandmas and stuff.</p>
+  <p id="polloLine5b"><strong>Pollo: </strong> I want to work on self-driving cars, but that’s scary, yo. </p>
+  <div id="polloQ5">
+    <p id="polloQ5A1" class="answers">Uh huh… that's crazy man. </p>
+@* Pollo: It IS crazy! It’s wack! The only way they could stop the car was by turning off the stereo!*@
+@* Pollo: I heard they had to write a line of code that, like, literally said: “Turn the music off.” *@
+@* Pollo: What’s a stereo doing driving a car? *@
+    <p id="polloQ5A2" class="answers">That must be some lowbrow news outlet story. </p>
+@* Pollo: Is the Staten Island Advance lowbrow to you?  *@
+@* Pollo: The only way they could stop the car was by turning off the stereo! *@
+@* Pollo: I heard they had to write a line of code that, like, literally said: “Turn the music off.” *@
+@* Pollo: What’s a stereo doing driving a car? *@
+    <p id="polloQ5A3" class="answers"> What?! That’s crazy man! How did they stop the cars? </p>
+@* Pollo: Right?! They had to turn the stereos off.*@
+@* Pollo: I heard they had to write a line of code that, like, literally said: “Turn the music off.” *@
+    <p id="polloQ5A4" class="answers"> That’s what you get buying into an apartheid heir with no tact. </p>
+@* Pollo: Yo, I don’t know what that means but it’s such a crazy story.  *@
+@* Pollo: The only way they could stop the car was by turning off the stereos! *@
+@* Pollo: I heard they had to write a line of code that, like, literally said: “Turn the music off.” *@
+  </div>
+  <!-- <p>[ The music in your headphones seems louder ]</p> -->
+  <!-- <p>[User sees a notification that their Ultra-Secrets folder on their desktop has been uploaded to the chat. ]</p> -->
+
+  <p id="polloLine6"><strong>Pollo: </strong> Yo, i’m tripping,  are you noticing all these weird glitches in our code? What’s this file you uploaded?</p>
+  <div id="polloQ6">
+    <p id="polloQ6A1" class="answers">[auto-response] You: THE BUGS WILL EAT US FROM THE INSIDE OUT! </p>
+@* Pollo: Aye, I think your computer must have a virus or something.*@
+  </div>
+
+  <!-- <p>[ Something changes in the music in your headphones. A sound like screaming. ]</p> -->
+  <!-- <p>[ You feel your bones beginning to vibrate at a strange frequency ]</p> -->
+
+  <!-- <p>[ Arik enters the chat]</p> -->
+
+  <p id="polloLine7"><strong>Arik: </strong> Hey, Hi, how is everyone doing here? </p>
+  <div id="polloQ7">
+    <p id="polloQ7A1" class="answers">[auto-response] you: THE MEALWORMS GO WIGGLE WIGGLE TO THE SWEET CHILL BEATS THAT PUT THE LARVA TO SLEEP </p>
+  </div>
+
+  <!-- <p>[ Mentor Kevin enters the chat ]</p> -->
+  
+  <p id="polloLine8"><strong>Kevin: </strong> GUYS! Some crazy stuff is going down and all the Dev teams are losing their minds! How are you doing here? </p>
+
+  <!-- <p>[ You go to grab your mouse to try to stop whatever is happening on your computer. In your hand </p> -->
+  <!-- <p>instead you find the squirming legs of a huge, hairy spider ]</p> -->
+  <!-- <p>[ Player’s Health Bar Become Visible (turns red???) ]</p> -->
+
+  <p id="polloLine9"><strong>Arik: </strong> I hope your coding is going well and you’re enjoying that playlist I shared. </p>
+  <div id="polloQ9">
+    <p id="polloQ9A1" class="answers">[auto-response] you: CORPSES AND ROACHES MAKE FINE PRESENTS WHEN YOU’RE IN LOVE WITH THE DEAD. </p>
+@* Kevin: Bro, it sounds like you’re on auto-pilot. We need to find a way to shut this down!  *@
+@* Kevin: Maybe you can type something to stop it! *@
+  </div>
+
+  <!-- <p>[ You can’t understand what’s happening. You go to rub your eyes, and your fingers find the buzzing wings of flies, swarming out from under your eyeballs]</p> -->
+  <p id="polloLine10"><strong>Arik: </strong>  Remember, it’s okay to feel lost at times. This is a challenging experience. But you’ll grow from it. </p>
+  <div id="polloQ10">
+    <p id="polloQ10A1" class="answers">[auto-response] you: This pitiful existence is nothing more than a vain attempt to morph into the king slug with his own goop bubbling out of his every pore! </p>
+  </div>
+
+  <p id="polloLine11"><strong>Kevin: </strong>  Are you still there, PLAYERNAME? What's going on?</p>
+  <div id="polloQ11">
+    <p id="polloQ11A1" class="answers">[auto-response] you: Must…Make it stop...Somehow..</p>
+  </div>
+
+  <p id="polloLine12"><strong>Arik: </strong>  Just relax and take it one step at a time.</p>
+  <p id="polloLine13"><strong>Kevin: </strong>  Remember what we talked about in our mentor meetings! </p>
+  <p id="polloLine14"><strong>Arik: </strong>  Giving in is a requirement to pass the course. Just let the music take you. </p>
+  <!-- <p>[ You open your mouth and scream out a thousand locusts]</p> -->
+  <!-- <p>[ You Lose ]</p> -->
+</div>

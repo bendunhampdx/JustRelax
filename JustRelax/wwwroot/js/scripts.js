@@ -85,4 +85,26 @@ $(document).ready(function () {
       }
     }
   })
+
+  $('#continueToIntroduction').click(function () {
+    $('#continueToIntroduction').hide();
+    $('#introductionLine1').fadeIn();
+    $('#pressEnter4').delay(300).fadeIn(3000);
+    $('#introductionSceneContinue').delay(500).fadeIn(3000);
+    backgroundLofi.play();
+  })
+  var introductionDivsCount = 1;
+  $('#introductionSceneContinue').click(function () {
+    var introductionDivsTotal = 21;
+    if (introductionDivsCount < introductionDivsTotal) {
+      introductionDivsCount += 1;
+      $('#pressEnter4').hide();
+      $('#introductionLine' + introductionDivsCount).fadeIn();
+      $('#screen').scrollTop($('#screen')[0].scrollHeight);
+      if (introductionDivsCount === introductionDivsTotal) {
+
+      }
+    }
+  })
+  
 });

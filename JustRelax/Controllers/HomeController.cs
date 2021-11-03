@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using JustRelax.Models;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace JustRelax.Controllers
 {
@@ -28,12 +30,13 @@ namespace JustRelax.Controllers
     {
       _db.Players.Add(player);
       _db.SaveChanges();
-      return RedirectToAction("Game");
+      return RedirectToAction("Game", new {id=player.PlayerId});
     }
 
-    public ActionResult Game()
+    public ActionResult Game(int id)
     {
-      return View();
+      Player thisPlayer = _db.Players.FirstOrDefault(player => player.PlayerId == id);
+      return View(thisPlayer);
     }
   }
 }
