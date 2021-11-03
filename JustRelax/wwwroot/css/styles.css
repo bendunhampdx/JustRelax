@@ -77,4 +77,23 @@ a:hover {
 .continue:hover {
   color:white;
   cursor: crosshair;
+ 
+input[type=text] {
+  color: greenyellow;
+  background-color: black;
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  border: 1px solid greenyellow;
+  width: 35%;
+}
+
+input[type=text]:focus {
+  color: greenyellow;
+  background-color: black;
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  border: 1px solid greenyellow;
+  width: 40%;
 }
