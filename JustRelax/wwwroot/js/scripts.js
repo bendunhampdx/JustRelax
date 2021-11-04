@@ -118,7 +118,7 @@ $(document).ready(function () {
   })
   var introductionDivsCount = 1;
   $('#introductionSceneContinue').click(function () {
-    var introductionDivsTotal = 26;
+    var introductionDivsTotal = 27;
     if (introductionDivsCount < introductionDivsTotal) {
       introductionDivsCount += 1;
       $('#pressEnter4').hide();

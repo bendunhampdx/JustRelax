@@ -7,6 +7,10 @@ namespace JustRelax.Models
     public int PlayerId { get; set; }
     public string Name { get; set; }
     public int Wellness { get; set; }
+    public string Pronouns {get; set;}
+    public string Hometown {get; set;}
+    public string BeforeLife {get; set;}
+    public string Hobbies {get; set;}
 
     public virtual ICollection<Item> Inventory { get; set; }
 

@@ -16,22 +16,22 @@
 
   <p id="characterLine2">Please enter your pronouns:
     <br>
-    @Html.TextBox("pronouns", "none", new {@class="form-control textBoxInput", @required="required"})
+    @Html.TextBoxFor(model => model.Pronouns, "none", new {@class="form-control textBoxInput", @required="required"})
   </p>
 
   <p id="characterLine3">Where are you from:
     <br>
-    @Html.TextBox("location", "nowhere", new{@class="form-control textBoxInput", @required="required"})
+    @Html.TextBoxFor(model => model.Hometown, "nowhere", new{@class="form-control textBoxInput", @required="required"})
   </p>
 
   <p id="characterLine4">What did you do before Codis Sonmum:
     <br>
-    @Html.TextBox("before", "nothing", new{@class="form-control textBoxInput", @required="required"})
+    @Html.TextBoxFor(model => model.BeforeLife, "nothing", new{@class="form-control textBoxInput", @required="required"})
   </p>
 
   <p id="characterLine5">What are your hobbies?:
     <br>
-    @Html.TextBox("before", "no hobbies", new{@class="form-control textBoxInput", @required="required"})
+    @Html.TextBoxFor(model => model.Hobbies, "no hobbies", new{@class="form-control textBoxInput", @required="required"})
   </p>
 
   <br>
