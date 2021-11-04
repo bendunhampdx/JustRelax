@@ -11,7 +11,7 @@ $(document).ready(function () {
   $('#gameTextBoxSubmit').click(function (event) {
     event.preventDefault();
     console.log($('#gameTextBoxInput').val());
-    if ($('#gameTextBoxInput').val().toLowerCase() === ("how am i feeling")) {
+    if ($('#gameTextBoxInput').val().toLowerCase().includes("how am i feeling")) {
       $('#wellnessBox').fadeIn();
       $('#wellnessBox').delay(6000).fadeOut();
     }
@@ -21,7 +21,7 @@ $(document).ready(function () {
   $('#gameTextBoxSubmit1').click(function (event) {
     event.preventDefault();
     console.log($('#gameTextBoxInput').val());
-    if ($('#gameTextBoxInput').val().toLowerCase() === ("how am i feeling")) {
+    if ($('#gameTextBoxInput').val().toLowerCase().includes("how am i feeling")) {
       $('#wellnessBox').fadeIn();
       $('#wellnessBox').delay(6000).fadeOut();
       $('#introductionSceneContinue').fadeIn();
@@ -29,7 +29,7 @@ $(document).ready(function () {
       $('#gameTextBoxSubmit').show();
     }
     $('#gameTextBoxInput').val("");
-   
+  
   })
 
   $('#clickHereToBegin').click(function () {
@@ -118,7 +118,7 @@ $(document).ready(function () {
   })
   var introductionDivsCount = 1;
   $('#introductionSceneContinue').click(function () {
-    var introductionDivsTotal = 21;
+    var introductionDivsTotal = 26;
     if (introductionDivsCount < introductionDivsTotal) {
       introductionDivsCount += 1;
       $('#pressEnter4').hide();
