@@ -1,4 +1,4 @@
-#introSceneContinue, #createSceneContinue, #jazzerciseSceneContinue, #gameTextBoxSubmit1 {
+#introSceneContinue, #createSceneContinue, #jazzerciseSceneContinue, #bobSceneContinue, #gameTextBoxSubmit1 {
   display: none;
 }
 
@@ -73,3 +73,10 @@
   color: white;
 }
 
+.answers{
+  color: white;
+}
+.answers:hover {
+  color:greenyellow;
+  cursor: crosshair;
+}

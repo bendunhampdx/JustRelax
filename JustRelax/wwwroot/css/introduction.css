@@ -10,6 +10,7 @@
 
 #continueToIntroduction:hover {
   color:white;
+  cursor: crosshair;
 }
 
 #pressEnter4 {

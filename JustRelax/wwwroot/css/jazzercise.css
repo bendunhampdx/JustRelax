@@ -1,10 +1,27 @@
 #continueToJazzercise,
 #jazzerciseLine1, #jazzerciseLine2, #jazzerciseLine3, #jazzerciseLine4, #jazzerciseLine5,#jazzerciseLine5a, #jazzerciseLine6, #jazzerciseLine7, #jazzerciseLine8, #jazzerciseLine9, #jazzerciseLine10, #jazzerciseLine11, #jazzerciseLine12, #jazzerciseLine13, #jazzerciseLine14,
 
-#jazzerciseQ1, #jazzerciseQ2, #jazzerciseQ3, #jazzerciseQ4, #jazzerciseQ5, #jazzerciseQ6, #jazzerciseQ7, #jazzerciseQ8, #jazzerciseQ9, #jazzerciseQ10, #jazzerciseQ11, #jazzerciseQ12 {
+#jazzerciseQ1, #jazzerciseQ2, #jazzerciseQ3, #jazzerciseQ4, #jazzerciseQ5, #jazzerciseQ6, #jazzerciseQ7, #jazzerciseQ8, #jazzerciseQ9, #jazzerciseQ10, #jazzerciseQ11, #jazzerciseQ12,
+
+#jazzAns1, #jazzAns2, #jazzAns3, #jazzAns4, #jazzAns5, #jazzAns6, #jazzAns7, #jazzAns8, #jazzAns9, #jazzAns10, #jazzAns12, #instructionJazz1,
+
+#jazzResponse1, #jazzResponse2, #jazzResponse3, #jazzResponse4, #jazzResponse5, #jazzResponse6, #jazzResponse7, #jazzResponse8, #jazzResponse9, #jazzResponse10, #jazzResponse12{
   display:none;
 }
 
+.jazzAns {
+  font-size: medium;
+  text-align: center;
+}
+.jazzAns:hover {
+  color: white;
+  cursor: crosshair;
+}
+
+#instructionJazz1 {
+  font-size: medium;
+  color: white;
+}
 /* #jazzerciseSceneContinue {
 
 } */

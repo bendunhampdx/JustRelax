@@ -1,6 +1,11 @@
 #corkyLine1, #corkyLine2, #corkyLine3, #corkyLine4, #corkyLine5, #corkyLine6, #corkyLine7, #corkyLine8, #corkyLine9, #corkyLine10, #corkyLine11, #corkyLine12, #corkyLine13, #corkyLine14,
 
-#corkyQ1, #corkyQ2, #corkyQ3, #corkyQ4, #corkyQ5, #corkyQ6,#corkyQ7, #corkyQ8, #corkyQ9, #corkyQ10, #corkyQ12 {
+#corkyQ1, #corkyQ2, #corkyQ3, #corkyQ4, #corkyQ5, #corkyQ6,#corkyQ7, #corkyQ8, #corkyQ9, #corkyQ10, #corkyQ12,
+
+#corkyAns1, #corkyAns2, #corkyAns3, #corkyAns4, #corkyAns5, #corkyAns6, #corkyAns7, #corkyAns8, #corkyAns9, #corkyAns10, #corkyAns12, 
+
+#corkyResponse1, #corkyResponse2, #corkyResponse3, #corkyResponse4, #corkyResponse5, #corkyResponse6, #corkyResponse7, #corkyResponse8, #corkyResponse9, #corkyResponse10, #corkyResponse12
+{
   display:none;
 }
 
