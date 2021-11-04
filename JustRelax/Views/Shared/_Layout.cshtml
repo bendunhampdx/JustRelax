@@ -2,28 +2,30 @@
 @model JustRelax.Models.Player
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] Just Relax</title>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/scripts.js" asp-append-version="true"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/styles.css" />
-    <link rel="stylesheet" href="~/css/titleScreen.css" />
-    <link rel="stylesheet" href="~/css/buttons.css" />
-    <link rel="stylesheet" href="~/css/intro.css" />
-    <link rel="stylesheet" href="~/css/credits.css" />
-    <link rel="stylesheet" href="~/css/player.css" />
-    <link rel="stylesheet" href="~/css/create.css" />
-    <link rel="stylesheet" href="~/css/introduction.css" />
-    <link rel="stylesheet" href="~/css/jazzercise.css" />
-    <link rel="stylesheet" href="~/css/bob.css" />
-    <link rel="stylesheet" href="~/css/corky.css" />
-    <link rel="stylesheet" href="~/css/abigail.css" />
-    <link rel="stylesheet" href="~/css/pollo.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] Just Relax</title>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/scripts.js" asp-append-version="true"></script>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/styles.css" />
+  <link rel="stylesheet" href="~/css/titleScreen.css" />
+  <link rel="stylesheet" href="~/css/buttons.css" />
+  <link rel="stylesheet" href="~/css/intro.css" />
+  <link rel="stylesheet" href="~/css/credits.css" />
+  <link rel="stylesheet" href="~/css/player.css" />
+  <link rel="stylesheet" href="~/css/create.css" />
+  <link rel="stylesheet" href="~/css/introduction.css" />
+  <link rel="stylesheet" href="~/css/jazzercise.css" />
+  <link rel="stylesheet" href="~/css/bob.css" />
+  <link rel="stylesheet" href="~/css/corky.css" />
+  <link rel="stylesheet" href="~/css/abigail.css" />
+  <link rel="stylesheet" href="~/css/pollo.css" />
 </head>
+
 <body>
   <main id="game">
 
@@ -31,20 +33,21 @@
     <div id="createSceneContinue" class="continueButton">[ Continue ]</div>
     <div id="introductionSceneContinue" class="continueButton">[ Continue ]</div>
     <div id="jazzerciseSceneContinue" class="continueButton">[ Continue ]</div>
-    
+
 
     <div id="screen">
       @RenderBody()
     </div>
- 
+
     <div id="gameTextBox">
       <form id="gameTextBoxForm">
         <input type="text" form="gameTextBoxForm" placeholder="Type your command" maxlength="50" id="gameTextBoxInput">
 
         <input type="submit" value="Submit" id="gameTextBoxSubmit">
+        <input type="submit" value="Submit" id="gameTextBoxSubmit1">
       </form>
     </div>
-    @if(@Model != null)
+    @if (@Model != null)
     {
       <div id="wellnessBox">
         <p id="wellnessText">Wellness Level</p>
@@ -55,6 +58,8 @@
     }
     <div id="otherText"></div>
   </main>
+  <audio controls loop id="audio" src="~/assets/lofi2.mp3" type="audio/mp3">
+  </audio>
 </body>
+
 </html>
-  

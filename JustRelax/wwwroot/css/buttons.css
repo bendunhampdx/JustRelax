@@ -1,4 +1,4 @@
-#introSceneContinue #createSceneContinue{
+#introSceneContinue, #createSceneContinue, #jazzerciseSceneContinue, #gameTextBoxSubmit1 {
   display: none;
 }
 
@@ -47,7 +47,7 @@
 }
 
 
-#gameTextBoxSubmit {
+#gameTextBoxSubmit, #gameTextBoxSubmit1 {
   align-items: center;
   justify-content: center;
   border: 2px solid greenyellow;

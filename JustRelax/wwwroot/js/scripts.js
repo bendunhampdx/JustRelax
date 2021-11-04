@@ -8,11 +8,34 @@ $(document).ready(function () {
   var backgroundTyping = new Audio('../assets/typing.wav');
   backgroundTyping.loop = true;
 
+  $('#gameTextBoxSubmit').click(function (event) {
+    event.preventDefault();
+    console.log($('#gameTextBoxInput').val());
+    if ($('#gameTextBoxInput').val().toLowerCase() === ("how am i feeling")) {
+      $('#wellnessBox').fadeIn();
+      $('#wellnessBox').delay(6000).fadeOut();
+    }
+    $('#gameTextBoxInput').val("");
+  })
+
+  $('#gameTextBoxSubmit1').click(function (event) {
+    event.preventDefault();
+    console.log($('#gameTextBoxInput').val());
+    if ($('#gameTextBoxInput').val().toLowerCase() === ("how am i feeling")) {
+      $('#wellnessBox').fadeIn();
+      $('#wellnessBox').delay(6000).fadeOut();
+      $('#introductionSceneContinue').fadeIn();
+      $('#gameTextBoxSubmit1').hide();
+      $('#gameTextBoxSubmit').show();
+    }
+    $('#gameTextBoxInput').val("");
+   
+  })
 
   $('#clickHereToBegin').click(function () {
     $('#titleScreen').hide();
     $('#disclaimer').show();
-    
+
   });
   $('#continueToIntro').click(function () {
     $('#disclaimer').fadeOut(1500);
@@ -101,10 +124,35 @@ $(document).ready(function () {
       $('#pressEnter4').hide();
       $('#introductionLine' + introductionDivsCount).fadeIn();
       $('#screen').scrollTop($('#screen')[0].scrollHeight);
+      if (introductionDivsCount === 3) {
+        introductionDivsCount += 1;
+        $('#introductionSceneContinue').fadeOut();
+        $('#gameTextBox').fadeIn();
+        $('#gameTextBoxForm').fadeIn();
+        $('#gameTextBoxInput').fadeIn();
+        $('#gameTextBoxSubmit').hide();
+        $('#gameTextBoxSubmit1').fadeIn();
+      }
       if (introductionDivsCount === introductionDivsTotal) {
-
+        $('#introductionScene').hide();
+        $('#continueToJazzercise').fadeIn();
       }
     }
   })
-  
+
+  $('#continueToJazzercise').click(function () {
+    $('#continueToJazzercise').hide();
+    $('#jazzerciseLine1').fadeIn();
+    $('#jazzerciseSceneContinue').delay(300).fadeIn(3000);
+    backgroundLofi2.play();
+  })
+  var jazzerciseDivsCount = 1;
+  var jazzerciseQsCount = 1;
+  $('#jazzerciseSceneContinue').click(function () {
+    var jazzerciseDivsTotal = 1;
+    var jazzerciseQsTotal = 1;
+  })
+
+  //THIS IS WHERE THE Q&A BEGINS!
+
 });
