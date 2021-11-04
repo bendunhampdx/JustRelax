@@ -91,11 +91,11 @@ _Copyright (c) 2021, Ben Dunham, Chynna Lew, Diego Serafico, Kevin Funez, Meliss
 
 <Br />
 
-### Contact Information  
+### Creators  
 
-Ben Dunham <bendunhampdx@gmail.com>
-Chynna Lew <chynnalew@yahoo.com>
-Diego Serafico <dseraficohernandez@gmail.com>
-Kevin Funez <kevin.funez315@gmail.com>
-Melissa Schatz-Miller <melissa.scmi@gmail.com>  
+[Ben Dunham](https://github.com/bendunhampdx)  
+[Chynna Lew](https://github.com/chynnalew)  
+[Diego Serafico](https://github.com/DiegoSerafico)   
+[Kevin Funez](https://github.com/KevinFunez5)  
+[Melissa Schatz-Miller](https://github.com/tigertiger)  <br ><br />
 _Please feel free to reach out to us with suggested changes/improvements, or if you have any questions._
