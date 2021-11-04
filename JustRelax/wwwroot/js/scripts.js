@@ -136,23 +136,31 @@ $(document).ready(function () {
       if (introductionDivsCount === introductionDivsTotal) {
         $('#introductionScene').hide();
         $('#continueToJazzercise').fadeIn();
+        $('#jazzerciseSceneContinue').show();
       }
     }
   })
 
-  $('#continueToJazzercise').click(function () {
+    $('#jazzerciseSceneContinue').click(function () {
     $('#continueToJazzercise').hide();
     $('#jazzerciseLine1').fadeIn();
-    $('#jazzerciseSceneContinue').delay(300).fadeIn(3000);
+    $('#jazzerciseSceneContinue').delay(500).fadeIn(3000);
     backgroundLofi2.play();
   })
-  var jazzerciseDivsCount = 1;
-  var jazzerciseQsCount = 1;
-  $('#jazzerciseSceneContinue').click(function () {
-    var jazzerciseDivsTotal = 1;
-    var jazzerciseQsTotal = 1;
+    var jazzerciseDivsCount = 1;
+    $('#jazzerciseSceneContinue').click(function () {
+    var jazzerciseDivsTotal = 27;
+    if (jazzerciseDivsCount < jazzerciseDivsTotal) {
+      jazzerciseDivsCount += 1;
+      $('#jazzerciseLine' + jazzerciseDivsCount).fadeIn();
+      $('#jazzerciseQ' + jazzerciseDivsCount).fadeIn();
+      $('#screen').scrollTop($('#screen')[0].scrollHeight);
+      // if (jazzerciseDivsCount === jazzerciseDivsTotal) {
+      //   $('#jazzerciseScene').hide();
+      //   $('#continueToBob').fadeIn();
+      //   $('#bobSceneContinue').show();
+      // }
+    }
   })
-
-  //THIS IS WHERE THE Q&A BEGINS!
 
 });
